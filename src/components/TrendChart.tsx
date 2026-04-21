@@ -32,9 +32,18 @@ interface CustomTooltipProps {
 function CustomTooltip({ active, payload, label }: CustomTooltipProps) {
   if (active && payload && payload.length) {
     return (
-      <div className="bg-white border border-gray-200 rounded-lg px-3 py-2 shadow-md text-sm">
-        <p className="font-semibold text-gray-700">{label}</p>
-        <p className="text-gray-600">{payload[0].value.toFixed(1)}%</p>
+      <div
+        style={{
+          background: '#FFFFFF',
+          border: '1px solid rgba(103,95,107,0.15)',
+          borderRadius: '6px',
+          padding: '10px 14px',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+          fontFamily: "'Roboto', sans-serif",
+        }}
+      >
+        <p className="font-bold text-sm" style={{ color: '#251F30' }}>{label}</p>
+        <p className="text-sm" style={{ color: '#675F6B' }}>{payload[0].value.toFixed(1)}%</p>
       </div>
     );
   }
@@ -43,23 +52,34 @@ function CustomTooltip({ active, payload, label }: CustomTooltipProps) {
 
 export default function TrendChart({ data, color, title, subtitle, yDomain }: TrendChartProps) {
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-5">
+    <div
+      className="bg-white rounded-xl p-5"
+      style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.08)', border: '1px solid #E8E6E9' }}
+    >
       <div className="mb-4">
-        <h3 className="font-semibold text-gray-800">{title}</h3>
-        {subtitle && <p className="text-xs text-gray-400 mt-0.5">{subtitle}</p>}
+        <h3 className="font-semibold" style={{ color: '#251F30', fontFamily: "'Roboto', sans-serif" }}>
+          {title}
+        </h3>
+        {subtitle && (
+          <p className="text-xs mt-0.5" style={{ color: '#675F6B' }}>{subtitle}</p>
+        )}
       </div>
       <ResponsiveContainer width="100%" height={220}>
         <LineChart data={data} margin={{ top: 5, right: 16, left: 0, bottom: 5 }}>
-          <CartesianGrid strokeDasharray="3 3" stroke="#F3F4F6" vertical={false} />
+          <CartesianGrid
+            strokeDasharray="3 3"
+            stroke="rgba(103,95,107,0.07)"
+            vertical={false}
+          />
           <XAxis
             dataKey="month"
-            tick={{ fontSize: 11, fill: '#9CA3AF' }}
-            axisLine={{ stroke: '#E5E7EB' }}
+            tick={{ fontSize: 10, fill: '#675F6B', fontFamily: 'Roboto, sans-serif' }}
+            axisLine={{ stroke: '#E8E6E9' }}
             tickLine={false}
           />
           <YAxis
             domain={yDomain ?? ['auto', 'auto']}
-            tick={{ fontSize: 11, fill: '#9CA3AF' }}
+            tick={{ fontSize: 10, fill: '#675F6B', fontFamily: 'Roboto, sans-serif' }}
             axisLine={false}
             tickLine={false}
             tickFormatter={(v: number) => `${v}%`}
@@ -72,7 +92,7 @@ export default function TrendChart({ data, color, title, subtitle, yDomain }: Tr
             stroke={color}
             strokeWidth={2.5}
             dot={{ r: 4, fill: color, strokeWidth: 0 }}
-            activeDot={{ r: 6, fill: color }}
+            activeDot={{ r: 6, fill: color, stroke: '#FFFFFF', strokeWidth: 2 }}
             animationDuration={800}
           />
         </LineChart>

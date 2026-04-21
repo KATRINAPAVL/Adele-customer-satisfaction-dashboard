@@ -15,7 +15,17 @@ export default function StatusBadge({ status, size = 'md' }: StatusBadgeProps) {
   return (
     <span
       className="inline-flex items-center rounded-full font-semibold"
-      style={{ backgroundColor: bg, color, paddingLeft: px, paddingRight: px, paddingTop: py, paddingBottom: py, fontSize }}
+      style={{
+        backgroundColor: bg,
+        color,
+        paddingLeft: px,
+        paddingRight: px,
+        paddingTop: py,
+        paddingBottom: py,
+        fontSize,
+        fontFamily: "'Roboto', sans-serif",
+        letterSpacing: '0.01em',
+      }}
     >
       {status}
     </span>
