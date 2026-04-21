@@ -1,0 +1,31 @@
+{
+  "resolution": [
+    { "month": "Aug-25", "yes": 4986, "no": 1482, "rate": 77.1 },
+    { "month": "Sep-25", "yes": 4948, "no": 1550, "rate": 76.1 },
+    { "month": "Oct-25", "yes": 6292, "no": 2064, "rate": 75.3 },
+    { "month": "Nov-25", "yes": 5464, "no": 1768, "rate": 75.6 },
+    { "month": "Dec-25", "yes": 4286, "no": 1634, "rate": 72.4 },
+    { "month": "Jan-26", "yes": 1424, "no": 556, "rate": 71.9 },
+    { "month": "Feb-26", "yes": 1188, "no": 552, "rate": 68.3 },
+    { "month": "Mar-26", "yes": 1448, "no": 676, "rate": 68.2 },
+    { "month": "Apr-26", "yes": 1110, "no": 480, "rate": 69.8 }
+  ],
+  "sentiment": [
+    { "month": "Aug-25", "positive": 154, "neutral": 26923, "negative": 8652, "negRate": 24.2 },
+    { "month": "Sep-25", "positive": 107, "neutral": 27192, "negative": 8823, "negRate": 24.4 },
+    { "month": "Oct-25", "positive": 176, "neutral": 33789, "negative": 13579, "negRate": 28.6 },
+    { "month": "Nov-25", "positive": 182, "neutral": 30701, "negative": 11331, "negRate": 26.8 },
+    { "month": "Dec-25", "positive": 175, "neutral": 30702, "negative": 14484, "negRate": 31.9 },
+    { "month": "Jan-26", "positive": 178, "neutral": 30603, "negative": 10983, "negRate": 26.3 },
+    { "month": "Feb-26", "positive": 92, "neutral": 29704, "negative": 9024, "negRate": 23.2 },
+    { "month": "Mar-26", "positive": 108, "neutral": 38148, "negative": 8362, "negRate": 17.9 },
+    { "month": "Apr-26", "positive": 70, "neutral": 21359, "negative": 5545, "negRate": 20.6 }
+  ],
+  "feedbackVolume": [
+    { "month": "Dec-25", "count": 50 },
+    { "month": "Jan-26", "count": 137 },
+    { "month": "Feb-26", "count": 150 },
+    { "month": "Mar-26", "count": 123 },
+    { "month": "Apr-26", "count": 98 }
+  ]
+}
