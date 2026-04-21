@@ -1,0 +1,25 @@
+{
+  "heatmap": [
+    { "category": "Mobile App", "totalMsgs": 35056, "positive": 62, "neutral": 14553, "negative": 20441, "negRate": 58.3, "status": "CRITICAL" },
+    { "category": "Online Banking", "totalMsgs": 34911, "positive": 34, "neutral": 19440, "negative": 15437, "negRate": 44.2, "status": "CRITICAL" },
+    { "category": "MobileSCAN", "totalMsgs": 11689, "positive": 8, "neutral": 7382, "negative": 4299, "negRate": 36.8, "status": "HIGH" },
+    { "category": "Payments", "totalMsgs": 67091, "positive": 246, "neutral": 45243, "negative": 21602, "negRate": 32.2, "status": "HIGH" },
+    { "category": "Payment Cards", "totalMsgs": 51709, "positive": 162, "neutral": 41232, "negative": 10315, "negRate": 19.9, "status": "MODERATE" },
+    { "category": "ATM Operations", "totalMsgs": 9923, "positive": 30, "neutral": 8023, "negative": 1870, "negRate": 18.8, "status": "MODERATE" },
+    { "category": "Account Operations", "totalMsgs": 23975, "positive": 60, "neutral": 20263, "negative": 3652, "negRate": 15.2, "status": "MODERATE" },
+    { "category": "Become Customer", "totalMsgs": 28122, "positive": 199, "neutral": 24031, "negative": 3892, "negRate": 13.8, "status": "OK" },
+    { "category": "Loans", "totalMsgs": 41772, "positive": 140, "neutral": 36889, "negative": 4743, "negRate": 11.4, "status": "OK" },
+    { "category": "Insurance", "totalMsgs": 15984, "positive": 62, "neutral": 15328, "negative": 594, "negRate": 3.7, "status": "OK" },
+    { "category": "Savings & Investments", "totalMsgs": 12400, "positive": 80, "neutral": 11630, "negative": 690, "negRate": 5.6, "status": "OK" }
+  ],
+  "feedbackCategories": [
+    { "category": "Found my answer", "count": 74, "signal": "Positive" },
+    { "category": "Needed human support", "count": 40, "signal": "Escalation" },
+    { "category": "Helpful response", "count": 36, "signal": "Positive" },
+    { "category": "Fast response", "count": 31, "signal": "Positive" },
+    { "category": "Technical issue", "count": 26, "signal": "Problem" },
+    { "category": "Easy to understand", "count": 23, "signal": "Positive" },
+    { "category": "Other", "count": 11, "signal": "Neutral" },
+    { "category": "Friendly tone", "count": 9, "signal": "Positive" }
+  ]
+}
