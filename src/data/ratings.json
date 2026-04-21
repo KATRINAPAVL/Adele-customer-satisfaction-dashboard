@@ -1,0 +1,26 @@
+{
+  "starDistribution": [
+    { "stars": 5, "count": 222, "share": 52.5 },
+    { "stars": 4, "count": 36, "share": 8.5 },
+    { "stars": 3, "count": 16, "share": 3.8 },
+    { "stars": 2, "count": 19, "share": 4.5 },
+    { "stars": 1, "count": 130, "share": 30.7 }
+  ],
+  "averageStars": 3.48,
+  "totalRated": 423,
+  "totalSessions": 88134,
+  "captureRate": 0.48,
+  "polarizationIndex": 83.2,
+  "country": [
+    { "code": "lv", "name": "Latvia", "flag": "🇱🇻", "responses": 279, "avgRating": 3.69, "negativeRate": 28.7, "distribution": { "5": 159, "4": 26, "3": 14, "2": 9, "1": 71 } },
+    { "code": "lt", "name": "Lithuania", "flag": "🇱🇹", "responses": 104, "avgRating": 2.99, "negativeRate": 50.0, "distribution": { "5": 47, "4": 4, "3": 1, "2": 5, "1": 47 } },
+    { "code": "ee", "name": "Estonia", "flag": "🇪🇪", "responses": 40, "avgRating": 3.23, "negativeRate": 42.5, "distribution": { "5": 16, "4": 6, "3": 1, "2": 5, "1": 12 } }
+  ],
+  "actionItems": [
+    { "priority": 1, "icon": "🚨", "title": "Mobile App: 58% negative sentiment", "description": "Needs better training data for app-specific FAQs" },
+    { "priority": 2, "icon": "🚨", "title": "Online Banking: 44% negative", "description": "E-banking feature answers inadequate" },
+    { "priority": 3, "icon": "⚠️", "title": "Resolution rate declining: 77% → 68%", "description": "Investigate knowledge base freshness" },
+    { "priority": 4, "icon": "⚠️", "title": "Lithuania: 2.99★ vs Latvia 3.69★", "description": "Localization quality gap — Lithuanian responses need improvement" },
+    { "priority": 5, "icon": "📈", "title": "Feedback capture at 0.48%", "description": "Consider more aggressive rating prompts to increase sample size" }
+  ]
+}
